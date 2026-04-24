@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital World Clock</title>
+    <link rel="stylesheet" href="clock-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Digital World Clock</h1>
+            <p style="color: #a0aec0; margin-top: 0.5rem;">Real-time clock across 12 major time zones</p>
+        </header>
+
+        <div class="local-time-section">
+            <div id="clock-local">00:00:00</div>
+            <div id="date-display">Loading...</div>
+        </div>
+
+        <div class="timezones-grid">
+            <!-- New York -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🗽</div>
+                <div class="timezone-name">New York (EST)</div>
+                <div class="timezone-clock" id="clock-ny">--:--:--</div>
+            </div>
+
+            <!-- London -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🇬🇧</div>
+                <div class="timezone-name">London (GMT)</div>
+                <div class="timezone-clock" id="clock-london">--:--:--</div>
+            </div>
+
+            <!-- Paris -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🗼</div>
+                <div class="timezone-name">Paris (CET)</div>
+                <div class="timezone-clock" id="clock-paris">--:--:--</div>
+            </div>
+
+            <!-- Dubai -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🌆</div>
+                <div class="timezone-name">Dubai (GST)</div>
+                <div class="timezone-clock" id="clock-dubai">--:--:--</div>
+            </div>
+
+            <!-- Tokyo -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🗾</div>
+                <div class="timezone-name">Tokyo (JST)</div>
+                <div class="timezone-clock" id="clock-tokyo">--:--:--</div>
+            </div>
+
+            <!-- Sydney -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🦘</div>
+                <div class="timezone-name">Sydney (AEDT)</div>
+                <div class="timezone-clock" id="clock-sydney">--:--:--</div>
+            </div>
+
+            <!-- Singapore -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🏙️</div>
+                <div class="timezone-name">Singapore (SGT)</div>
+                <div class="timezone-clock" id="clock-singapore">--:--:--</div>
+            </div>
+
+            <!-- Los Angeles -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🌅</div>
+                <div class="timezone-name">Los Angeles (PST)</div>
+                <div class="timezone-clock" id="clock-la">--:--:--</div>
+            </div>
+
+            <!-- Toronto -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🍁</div>
+                <div class="timezone-name">Toronto (EST)</div>
+                <div class="timezone-clock" id="clock-toronto">--:--:--</div>
+            </div>
+
+            <!-- Mexico City -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🌮</div>
+                <div class="timezone-name">Mexico City (CST)</div>
+                <div class="timezone-clock" id="clock-mexico">--:--:--</div>
+            </div>
+
+            <!-- Hong Kong -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🏮</div>
+                <div class="timezone-name">Hong Kong (HKT)</div>
+                <div class="timezone-clock" id="clock-hongkong">--:--:--</div>
+            </div>
+
+            <!-- Mumbai -->
+            <div class="timezone-card">
+                <div class="timezone-icon">🇮🇳</div>
+                <div class="timezone-name">Mumbai (IST)</div>
+                <div class="timezone-clock" id="clock-mumbai">--:--:--</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>⏰ Displaying real-time across 12 major global time zones</p>
+            <p>Last updated: <span id="last-update">just now</span></p>
+        </footer>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
